@@ -51,6 +51,7 @@ func realMain() error {
 	mux := http.NewServeMux()
 
 	// TODO: ここから実装を行う
+	log.Fatal(http.ListenAndServe(defaultPort, mux))
 
 	return nil
 }
